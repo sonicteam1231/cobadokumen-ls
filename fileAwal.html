@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    
+</head>
+<body>
+<div class="container-fluid">
+
+    <form>
+        <div class="modal " id="modalBebasTemuan" tabindex="-1" role="dialog" aria-labelledby="modalBebasTemuanLabel" style="display: block;">
+            <div class="modal-dialog  modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <h4 class="modal-title" id="modalBebasTemuanLabel">Draft SK Bebas </h4>
+                </div>
+                <div class="modal-body" id="listBebasTemuan">
+                      <table width="100%"  style="border-bottom: 3px double #000000;vertical-align: bottom; font-size: 13pt; color: #000;padding-bottom:10px;letter-spacing: 1px;font-family:arial;">
+                          <tbody><tr>
+                              <td width="20%" align="center">
+                              <img src="assets/img/favicon.png" width="80px"> 
+                              </td>
+                              <td width="60%" align="center" colspan="2" >
+                              <span style="font-size: 16pt;">PEMERINTAH KOTA MAKASSAR</span><br>
+                              <span style="font-weight: bold;font-size: 18pt;">INSPEKTORAT DAERAH</span><br>
+                              <span style="font-size: 9pt;letter-spacing:0px;">Jalan Teduh Bersinar No.7 Komp. Griya Fajar Mas, Makassar Kode Pos : 90224<br> Telp. (0411)881550 / Fax (0411)8215755<br> E-Mail : inspektorat_makassar@yahooo.com
+                              </span>
+                              </td>
+                              <td width="20%" align="center" >
+                                  <img src="assets/img/415.png" width="100px"> 
+                              </td>
+                          </tr>
+                      </tbody></table>
+                      <p style="text-align:center;font-size:11pt;font-weight:bold;font-family:arial;">
+                        <br>
+                        <u>SURAT KETERANGAN</u>
+                        <br>Nomor : <input type="text" name="no_surat" id="no_surat" autocomplete="off">
+                      </p>
+                      <textarea class="form-control" name="uraian_1" id="uraian_1" required="" rows="3" placeholder="Uraian Pendahuluan">Menindaklanjuti Surat Kepala Dinas Pendidikan Nomor 3909/K/Umkep/VI/2023, Perihal Permohonan Surat Keterangan Bebas Temuan an. BASMANI dalam rangka memenuhi persyaratan kelengkapan administrasi untuk pindah tugas dari lingkup Pemerintah Kota Makassar ke  Universitas Negeri Makassar , maka dengan ini diterangkan bahwa yang bersangkutan dengan data sebagai berikut :</textarea>
+                      <br>
+                  <table width="100%" >
+                      <tbody>
+                        <tr>
+                          <td  width="10%" align="left">
+                              &nbsp;
+                          </td>
+                          <td class='mx-auto' width="20%" align="left">
+                              Nama
+                          </td>
+                          <td  width="60%" align="left">
+                              : <input type="text" name="nama_surat" id="nama_surat" value="BASMANI" style="width:300px;" autocomplete="off" readonly="">
+                          </td>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                          <td width="20%" align="left">
+                              N I P
+                          </td>
+                          <td width="60%" align="left">
+                              : <input type="text" name="nip_surat" id="nip_surat" value="197909152009032003" autocomplete="off" style="width:300px;" readonly="">
+                          </td>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                          <td width="20%" align="left">
+                              Pangkat / Golongan
+                          </td>
+                          <td width="60%" align="left">
+                              : <input type="text" name="pangkat_surat" id="pangkat_surat" value="Penata Tk.I, III/d" style="width:300px;" autocomplete="off">
+                          </td>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                          <td width="20%" align="left">
+                              Jabatan
+                          </td>
+                          <td width="60%" align="left">
+                              : <input type="text" name="jabatan_surat" id="jabatan_surat" value="Guru Muda" style="width:300px;" autocomplete="off">
+                          </td>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                      </tr>
+                      <tr>
+                          
+                      </tr><tr>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                          <td width="20%" align="left">
+                              SKPD
+                          </td>
+                          <td width="60%" align="left">
+                              : <input type="text" name="opd_surat" id="opd_surat" value="Dinas Pendidikan" style="width:300px;" autocomplete="off">
+                          </td>
+                          <td width="10%" align="left">
+                              &nbsp;
+                          </td>
+                      </tr>
+                  </tbody></table><br><textarea class="form-control" name="uraian_2" id="uraian_2" required="" rows="6" placeholder="Uraian Pendahuluan">Berdasarkan data temuan Laporan Hasil Pemeriksaan pada Inspektorat Daerah Kota Makassar yang terbit sampai tanggal 10 Juli 2023, yang bersangkutan tidak terkait dengan temuan Hasil Pemeriksaan.
+                  Surat keterangan ini tidak menerangkan temuan Aparat Pengawasan Lainnya, dan hanya berlaku 30 Hari Kalender sejak dikeluarkan.
+                  Demikian Surat Keterangan ini dibuat untuk dipergunakan sebagaimana mestinya.</textarea><br><table width="100%">
+                  <tbody><tr>
+                      <td width="60%" align="left" colspan="3">
+                          &nbsp;
+                      </td>
+                      
+                      <td width="40%" align="left">
+                          Makassar, <input type="date" name="tgl_surat" id="tgl_surat" value="2023-07-10" style="width:150px;" autocomplete="off"><br>
+                          Penandatangan :<br>
+                          <select name="ttd_surat" id="ttd_surat" class="form-control select2-hidden-accessible" style="width:100%" tabindex="-1" aria-hidden="true"><option value="">--Pilih Salah Satu--</option><option value="198402032006042011">A. ASMA ZULISTIA EKAYANTI, SE., MM</option><option value="197401272001121004">MUNAWAR CHAERUDDIN, S.Si., M.A.P</option><option value="197209171993031003">LASMANA, S.I.P., M.H</option><option value="197312082002122003">Ir. SUHARTINI, ST</option><option value="197408091995032001">Dr. Hj. WIDIAWATI SAID, S.Sos, M.Si</option><option value="196502121993031018">MUNANDAR, S.H., M.Si</option><option value="198507252010011022">ANDRY, S.E., M.Si., Ak., CA, AAP -A</option><option value="197909092009031006">SULAEMAN, ST., MM</option><option value="196612011994031013">Ir. MOH. ZULBACHRI JOESOEF, M.Si</option><option value="198106072010012011">A. FITRIANI SAID, SH</option><option value="199201102014062001">NURUL ANNIZA, S. STP., M.AP</option><option value="198101162014101001">A. AMIR MACHMUD, SE</option><option value="198212102014102001">KASMAWATI, SE</option><option value="198510292019031001">ALIMUL ARDHI, S. Akt</option><option value="198512072020121003">MUH. DAHRI, SE</option><option value="198609112020121002">ALDRI MULYADI MANGIDING, SH</option><option value="199005252020122007">MERSY, SE</option><option value="199411082020122009">FADHILAH RAQIYAH AZIS, SE</option><option value="199711132022031007">MUHAMMAD RUHYADI NATSIR, A.Md.</option><option value="199103122022032004">NIRMALA DEWI,ST.</option><option value="199604292022031006">MUHAMMAD IKHSAN, A.Md.T</option><option value="196501071991032008">HUSMAWATI, SE</option><option value="196507021993032009">Dra. SUTRANI, M.M</option><option value="197108221992021001">Drs. ARWIN DACHLAN, M.Si</option><option value="197609112001122004">ARNAWANTY, SE.Ak., MM</option><option value="198010022006042010">HANIFAH OKTAVIANTY, SE,Ak</option><option value="196210261981032003">NURMIATI, SE</option><option value="196304161985102002">HADIDJAH, S.Sos</option><option value="196404241985031018">M.GUNTUR, S.Sos</option><option value="196607211995031002">NASRULLAH JUNUS, SE</option><option value="197705182009032005">A. TENRIWALI, SE</option><option value="198212062006042010">IMELDA WIRASWANTI, SE</option><option value="198309052006042018">RIZKI ANDRIYANI, SE.Ak</option><option value="197802182008042002">Hj. HAMSINAH, SE</option><option value="198212042008042002">RISMAWATI TAHIR, SE</option><option value="198212122008042003">YUSRIANI, SE</option><option value="197905102005022005">SYAHRIYANTI, S.Sos</option><option value="197511192009011002">Ir. BAKHRUN SILIPU, ST</option><option value="197707082009011004">GATOET BANDUNG, ST, MM</option><option value="197604212011011004">ANDI AZIS ABU BAKAR, S.Kom., MM</option><option value="197909042009021004">HERMAN MA'MUR, S. FARM., APT</option><option value="197801082010012017">ANDI ASTINA, SE</option><option value="198805062010011010">A. FADHLAN MOH. ASTARI, SE</option><option value="198005242009011006">SULFIADI, ST</option><option value="198206132010012029">RAMLAH, SH</option><option value="198207072009011007">ANDI MUHAMMAD AKMAL MALLA, SE</option><option value="198401032009011007">MUKARRAFAH, SE</option><option value="198109262006041009">ANDI WAHIDIN, SE, M.Si</option><option value="197802012010011016">KHALIFUL QAYYAM SIDENRE, ST</option><option value="198310022010012010">IRMAWATY, SAB., M.A.P</option><option value="198608092011012010">DWI KARTIKA SARI, SE</option><option value="198411182011012008">ST. NUR FITRI HIDAYATI, S.Psi</option><option value="197705102006041015">NURMAWANSYAH RAHMAN , A.Md</option><option value="198802072015032001">ULFA UTAMI, SE</option><option value="198109242015031002">IRWANDI SETIAWAN, SE</option><option value="198106202014071001">YASSER, SE</option><option value="197910192011012004">NUR OPIYA, SE</option><option value="198501282011012011">NIES FATMESYIA, SE</option><option value="198209132015032001">RAHAYU AMALIAH, S.Psi</option><option value="198501122015032004">SARI PURNAMA KADIR, S.Psi</option><option value="198802152015032007">SIDRA HANDAYANI, S.Psi</option><option value="199802032006042023">Muhammad Nur Arifin</option><option value="111111111111111111">AdminOperator</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ttd_surat-container"><span class="select2-selection__rendered" id="select2-ttd_surat-container"><span class="select2-selection__placeholder">Pilih Penandatangan</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      </td>
+                  </tr>
+                  
+                  </tbody></table><br>
+                  Tembusan Kepada Yth:
+                  <textarea class="form-control" name="tembusan" id="tembusan" required="" rows="4" placeholder="Tembusan">1. Walikota Makassar (Sebagai Laporan) di Makassar,
+          2. Sekretaris Daerah Kota Makassar di Makassar,
+          3. Kepala Dinas Pendidikan Kota Makassar di Makassar,
+          4. Arsip.</textarea><br></div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-flat btn-lg btn-success simpan-skbt">Simpan dan Cetak SK</button> -->
+                  <span class="waves-input-wrapper waves-effect waves-light"><input type="submit" name="submit" value="Simpan dan Arsip" id="simpan" class="btn btn-success btn-lg"></span>
+                  <button type="button" class="btn btn-flat btn-lg btn-danger waves-effect waves-effect" data-dismiss="modal">Tutup</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </form>
+</div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
